@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+  flex: 3;
+  padding-left: 25px;
+}
+.logo a {
+  justify-content: left;
+  padding-left: 25px;
+  background: rgba(72, 172, 215, 1);
+  width: 200px;
+  height: 40px;
+}
+.logo:hover a {
+    background: rgba(72, 172,215, 1);;
+
+}
+nav a {
+  color: black;
+  /* background: rgba(219, 211, 209, 1); */
+  background: rgba(255, 255, 255,0.5);
+  height: 40px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.5s;
+  font-size: 1.1rem;
+   border: black;
+  border-radius: 50px;
+  margin:3px;
+}
+nav a:hover {
+  background: rgba(72, 172, 215, 1); /* 72, 172, 215 --blue color accent */
+  color: black;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}
+nav li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  padding-top: 5px;
+}
+nav li:hover .dropdown > li {
+  display: block;
+  top: 0px;
+}
+.dropdown li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+.dropdown li {
+  position: relative;
+}
+.navicon {
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+.banner {
+  background: center/cover no-repeat url("./banner5.jpg");
+  /* clip-path: circle(50% at 50% 50%); */
+  width: 100vw;
+  height: 80vh;
+  /* border-left: 0px solid rgb(199, 80, 0); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannertext {
+  border-top: 5px solid rgba(72, 172, 215,1);
+  width: 70%;
+  height: 15%;
+}
+.bannertext h1 {
+  color: rgba(219, 211, 209, 1);
+  /* text-shadow: 0.5px 0.5px gainsboro; */
+  /* text-shadow: 2.1px 2.1px rgba(72, 172, 215,0.9); */
+  text-shadow: 2.8px 0.8px black;
+  font: bolder;
+  text-align: center;
+  justify-items: center;
+  font-size: 2.8rem;
+  border-top: none;
+}
+.main {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin:12.5% 0%;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .section1 p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+   .logo {
+       padding: 0px;
+     
+   }
+   .logo a{
+       width: 150px;
+       padding-left:17px;
+   }
+   nav ul {
+       position:static;
+        width: 95%;
+   }
+   nav .hide{
+       display: none;
+   }
+   .navicon{
+       margin-left: 2px;
+       margin-top: 4px;
+       font-size: 0.7rem;
+   }
+   .main h1{
+       font-size: 1.3rem;
+   }
+ .main p{
+       font-size: 1rem;
+   }
+   .main pre{
+       font-size: 1rem;
+       display: flex;
+       flex-wrap: wrap;
+       width: 307px;
+       margin:0 auto;
+   }
+   .main{
+       height: 100vh;
+   }
+}
+/* .section:hover h1{ --You can use somewhere else just change the class---
+    border-bottom: 5px solid rgba(252,114,51, 0.9);
+    border-top-color: rgba(0, 78, 164,1); --great blue accent color
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 1.5s;
+}
+.section:hover strong{ --You can use somewhere else just change the class---
+    color: rgba(252,114,51,1); */
+/* @media (max-width: 1300px) {
+    .section1,.main,.sideimage {
+        height: 50vh;
+    }
+} */
+/* .section:hover{
+  background: rgba(199, 80, 0, 0.4); --you can use somewhere else just change the class--
+background: rgba(42, 45, 52, .65);
+color:white;
+} */
+/* .section1 {
+  width: 100vw;
+  height: 60vh;
+  background: rgba(42, 45, 52, .07);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transition: background 0.5s;
+} */
