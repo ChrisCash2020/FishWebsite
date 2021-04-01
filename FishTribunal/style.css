@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: whitesmoke;
 }
 .logo {
   flex: 3;
@@ -18,13 +19,13 @@ body{
   height: 40px;
 }
 .logo:hover a {
-    background: rgba(72, 172,215, 1);;
-
+  background: rgba(72, 172, 215, 1);
 }
+
 nav a {
   color: black;
   /* background: rgba(219, 211, 209, 1); */
-  background: rgba(255, 255, 255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   height: 40px;
   font-weight: bold;
   display: flex;
@@ -33,9 +34,9 @@ nav a {
   text-decoration: none;
   transition: background 0.5s;
   font-size: 1.1rem;
-   border: black;
+  border: black;
   border-radius: 50px;
-  margin:3px;
+  margin: 3px;
 }
 nav a:hover {
   background: rgba(72, 172, 215, 1); /* 72, 172, 215 --blue color accent */
@@ -57,7 +58,7 @@ nav li {
 }
 nav li:hover .dropdown > li {
   display: block;
-  top: 0px;
+  /* top: 0px; */
 }
 .dropdown li {
   display: none;
@@ -88,7 +89,7 @@ nav li:hover .dropdown > li {
   align-items: center;
 }
 .bannertext {
-  border-top: 5px solid rgba(72, 172, 215,1);
+  border-top: 5px solid rgba(72, 172, 215, 1);
   width: 70%;
   height: 15%;
 }
@@ -103,59 +104,70 @@ nav li:hover .dropdown > li {
   font-size: 2.8rem;
   border-top: none;
 }
-.main {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  margin:12.5% 0%;
-  position: relative;
-}
+.listicon img{
+          width: 1.3rem;
+          height: 1rem;
+      }
+p, pre {
+        font-size: 1.3rem;
 
+      }
+.container-text1,
+      .container-text2 {
+        flex: 1;
+      }
+      .container-text2 {
+        text-align: right;
+      }
+      .container-text2 h3 {
+        margin-right: 5vw;
+      }
+      .container-text1 p,
+      .container-text2 p {
+        margin: 4vh 4vw;
+      }
+.section {
+        display: flex;
+        flex-direction: row;
+      }
+.container-image1,
+.container-image2 {
+        background: center/cover no-repeat url("./betta2.png");
+        height: 50vh;
+        width: 600px;
+      }
+h3 {
+        font-size: 3rem;
+      }
 @media (max-width: 600px) {
-  .section1 p {
-    font-size: 0.9rem;
+ h1 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .logo {
+    padding: 0px;
+  }
+  .logo a {
+    width: 150px;
+    padding-left: 17px;
+  }
+  nav ul {
+    position: static;
+    width: 95%;
+  }
+  nav .hide {
+    display: none;
+  }
+  .navicon {
+    margin-left: 2px;
+    margin-top: 4px;
+    font-size: 0.7rem;
   }
 }
-@media (max-width: 600px) {
-   .logo {
-       padding: 0px;
-     
-   }
-   .logo a{
-       width: 150px;
-       padding-left:17px;
-   }
-   nav ul {
-       position:static;
-        width: 95%;
-   }
-   nav .hide{
-       display: none;
-   }
-   .navicon{
-       margin-left: 2px;
-       margin-top: 4px;
-       font-size: 0.7rem;
-   }
-   .main h1{
-       font-size: 1.3rem;
-   }
- .main p{
-       font-size: 1rem;
-   }
-   .main pre{
-       font-size: 1rem;
-       display: flex;
-       flex-wrap: wrap;
-       width: 307px;
-       margin:0 auto;
-   }
-   .main{
-       height: 100vh;
-   }
-}
+
 /* .section:hover h1{ --You can use somewhere else just change the class---
     border-bottom: 5px solid rgba(252,114,51, 0.9);
     border-top-color: rgba(0, 78, 164,1); --great blue accent color

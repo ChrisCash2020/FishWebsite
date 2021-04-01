@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fish Tribunal</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script
       src="https://kit.fontawesome.com/770e947581.js"
       crossorigin="anonymous"
@@ -17,52 +17,77 @@
         .section:hover h1, .section:hover strong{
 text-shadow: .05px .05px white;
 } */
-      .main strong,.main li{
-        text-shadow: 2px 0.8px rgba(219, 211, 209, 1);
-      }
-      .main h1 {
-        /* border-top-width: 0.6rem; */
-        margin: auto;
-        font-size: 1.8rem;
-        text-shadow: 3px 0.8px rgba(219, 211, 209, 1);
-      }
-      .main:hover h1 {
-        margin: auto;
-        transition: all 1.5s;
-        padding: 10vh 15px 0px 15px;
-        scroll-behavior: smooth;
-      }
 
-      .main:hover #fade {
-        margin: auto;
-        display: inline-block;
-        padding-bottom: 10vh;
-        scroll-behavior: smooth;
-      }
-      .main #fade {
-        display: none;
-        font-size: 1.3rem;
-        padding: 10px;
-      }
-      .main p, .main pre {
-        font-size: 1.3rem;
+nav ul {
+  position: absolute;
+}
+.main {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  width: 100vw;
+  margin: 4% 0%;
+  position: relative;
+}
+.main strong,.main li{
+text-shadow: 2px 0.8px rgba(219, 211, 209, 1);
+}
+.main h1 {
+/* border-top-width: 0.6rem; */
+margin: auto;
+font-size: 1.8rem;
+text-shadow: 3px 0.8px rgba(219, 211, 209, 1);
+padding: 10vh 15px 0px 15px;
+}
+.main:hover {
+/* margin: auto; */
+transition: all 1.5s;
+padding: 8vh 15px 0px 10px;
+scroll-behavior: smooth;
+}
 
-      }
-      .special {
-        border-width: 0.6rem 0rem;
-        border: 1px solid white;
-        padding-bottom: 10px;
-      }
-      .listicon img{
-          width: 1.3rem;
-          height: 1rem;
-      }
-      /* .sideimage {
-        background: center/cover no-repeat url("./sideimage2.jpg");
-        width: 30vw;
-        height: 60vh;
-        flex: 1;
-      } */
+.main:hover .fade {
+margin:0 auto;
+display: inline-block;      
+scroll-behavior: smooth;
+}
+.main .fade {
+display: none;
+font-size: 1.3rem;
+padding-top: 20px;
+}
+    
+.special {
+border-width: 0.6rem 0rem;
+border: 1px solid white;
+ /* padding-bottom: 10px; */
+}
+.listicon img{
+width: 1.3rem;
+height: 1rem;
+}
+.center-image {
+background: center/cover no-repeat url("./untitled1.2.png");
+width: 50vw;
+height: 50vh;
+margin:auto;
+ outline:8px double rgba(72,172,215,1);
+}
+      @media (max-width: 600px) {
+  .main {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+  .center-image {
+    background: center/cover no-repeat url("./pray.png");
+    outline-color: rgba(225, 149, 87, 1);
+    outline-width: 15px;
+    height: 30vh;
+  }
+   }
+    
+     
     </style>
   </head>
   <body>
@@ -86,9 +111,9 @@ text-shadow: .05px .05px white;
             <span class="navicon">&#x25bc;</span>
           </a>
           <ul class="dropdown">
-            <li><a href="#">Begineer</a></li>
-            <li><a href="#">Intermediate</a></li>
-            <li><a href="#">Advanced</a></li>
+            <li><a href="./Begineer.html">Begineer</a></li>
+            <li><a href="./Intermediate.html">Intermediate</a></li>
+            <li><a href="./Expert.html">Advanced</a></li>
           </ul>
         </li>
       </ul>
@@ -112,12 +137,14 @@ text-shadow: .05px .05px white;
         >
           Philosophy
         </h1>
-        <p id="fade">
+        <p class="fade">
           <i>“Nature is pleased with simplicity. And nature is no dummy.”</i>
           - <strong> Isaac Newton</strong>
         </p>
-      </div>
-      <br /><br /><br />
+        <br><br><br>
+        <div class="center-image"></div>
+        </div>
+      <div>
       <h1>Where To Begin</h1>
       <p>
         It's a common misconception to assume fish are low-maintenance pets but
@@ -126,15 +153,15 @@ text-shadow: .05px .05px white;
         <br>
           
             <h2 style="font-size: 1.3rem;color:rgba(72, 172,215, 1);text-shadow:2px 0.8px rgb(255, 255, 255) "><u>Know these</u></h2> <br>
-        <pre>
-            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Decide on a fish type                 
-            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> What and How much to feed you fish    
-            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Environment ideal for your fish       
-            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Equiment and Cleaning routine for fish
-        </pre>
+        <h4>
+            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Decide on a fish type <br>             
+            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> What/How much to feed you fish <br> 
+            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Environment for your fish <br>   
+            <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Cleaning routine for fish <br>   
+        </h4>
       </p>
+    </div>
     </section>
-    <h1>hello</h1>
     <!-- <div class="sideimage"></div> -->
     <!-- style="padding-top: 10px;" -->
   </body>
