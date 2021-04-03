@@ -8,23 +8,42 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
       .banner {
-        background: whitesmoke;
-        height: 25vh;
-        border-top: 10px solid rgba(223,55,240,.5);
-        border-bottom: 10px solid rgba(223,55,240,.5);
-        border-radius: 50px;
+        background:center/cover no-repeat url("./KeepVert2.jpg");
+         width: 80vw;
+        margin-left: 12%;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        border-top:none;
+        border-bottom: 10px solid rgba(223, 55, 240, 1);
+        border-radius:none;
       }
       nav a {
         background: rgba(72, 172, 215, 1);
       }
       .bannertext h1 {
-        color: rgba(223,55,240,.5);
+        color: rgba(223, 55, 240, 0.5);
         text-shadow: 2.8px 0.8px white;
       }
       .listicon img {
         width: 4rem;
         height: 4rem;
       }
+       @media (max-width: 600px) {
+   .banner{
+    margin: auto;
+    background: whitesmoke;
+    clip-path:none;
+    height: 25vh;
+    width: auto;
+    border: none;
+  }
+   .listicon img{
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  h3{
+        font-size: 1.2rem;
+      }
+  }
     </style>
   </head>
   <body>
@@ -37,10 +56,8 @@
           <a href="./index.html">Home</a>
         </li>
 
+        
         <li>
-          <a href="#" class="inverse">About</a>
-        </li>
-        <li class="hide">
           <a href="#"
             >Learn
             <span class="navicon">&#x25bc;</span>
@@ -50,6 +67,9 @@
             <li><a href="./Intermediate.html">Intermediate</a></li>
             <li><a href="./Expert.html">Advanced</a></li>
           </ul>
+        </li>
+        <li>
+          <a href="./about.html" class="hide">About</a>
         </li>
       </ul>
     </nav>
@@ -65,62 +85,81 @@
     <section class="section">
       <div class="container-text1">
         <h3>
-          <span class="listicon"><img src="./gradientbox4.png" alt="Square" /></span>
+          <span class="listicon"
+            ><img src="./gradientbox4.png" alt="Square"
+          /></span>
           Decide on a Fish type
         </h3>
         <p>
-          When you feel comfortable enough with begineer level betta fish you
-          can advance to fish such as Cichlids that grow to an average size of
-          2-14+ inches and display interesting behaviors and personalities
+          Previously all the fish mentioned were freshwater fish but when you
+          become more knowledgeable you can acquire saltwater fish such as the
+          Harlequin Sweetlips. They grow to an average size of 28 inches and
+          have a low survival rate
         </p>
       </div>
-      <div class="container-image1"></div>
+      <div
+        class="container-image1"
+        style="background-image: url('./Harley1.png')"
+      ></div>
     </section>
     <br /><br />
     <section class="section">
-      <div class="container-image2"></div>
+      <div class="container-image2" style="background-image: url('./Harleyfood1.png')"></div>
       <div class="container-text2">
         <h3>
-          <span class="listicon"><img src="./gradientbox4.png" alt="Square" /></span>
+          <span class="listicon"
+            ><img src="./gradientbox4.png" alt="Square"
+          /></span>
           What and How much to feed you Fish
         </h3>
         <p>
-          Cichlids diet consists of flakes, pellets, frozen or live food. You
-          need to Feed them an amount they couldn't eat in 1 to 2 minutes twice
-          a day
+          Sweetlips diet consists of live shrimp, black worms, frozen or live.
+          They can be very picky eaters and need constant variations in food
+          types and you also need to feed them 2-3 times a day
         </p>
       </div>
     </section>
     <section class="section">
       <div class="container-text1">
         <h3>
-          <span class="listicon"><img src="./gradientbox4.png" alt="Square" /></span>
+          <span class="listicon"
+            ><img src="./gradientbox4.png" alt="Square"
+          /></span>
           Environment ideal for your Fish
         </h3>
         <p>
-          Environment must be appropriately sized about 10-29+ gallons depending
-          on species, Water quality must be stable with a water temperature of
-          72-82 degrees Farenheit. Avoid overcrowded conditions because they can
-          cause stress and disease to fish
+          Environment must be appropriately sized about 170+ gallons depending
+          on species. They have water parameters such as: Temperature: 72°F to
+          78°F Carbonate hardness: 8 to 12dKH pH: 8.1 – 8.4 Salinity 1.020 –
+          1.025 must be stable with a water temperature of. Avoid housing them
+          with aggressive fish and smaller fish
         </p>
       </div>
-      <div class="container-image1"></div>
+      <div class="container-image1" style="background-image: url('./HarleyTank1.png')"></div>
     </section>
     <br /><br />
     <section class="section">
-      <div class="container-image2"></div>
+      <div class="container-image2" style="background-image: url('./bettaclean3.png');"></div>
       <div class="container-text2">
         <h3>
-          <span class="listicon"><img src="./gradientbox4.png" alt="Square" /></span>
+          <span class="listicon"
+            ><img src="./gradientbox4.png" alt="Square"
+          /></span>
           Cleaning routine for fish
         </h3>
         <p>
-          Install and check filter once a day, check the water quality once a week,change 10-25% of the total volume of water every 2-4 weeks, or as needed
+          Install and check filter once a day, check the water quality once a
+          week, use an aquarium vacuum once a week when younger and multiples
+          times a weeks as they grow bigger
           <br /><br />
           Here is a more in depth
-          <a href="">Video</a> About cleaning
+          <a href="https://youtu.be/1sLUSnnTFTA">Video</a> About cleaning
         </p>
       </div>
     </section>
   </body>
+   <footer class="footer">
+    <p><a href="./about.html" style="color:rgba(72, 172,215, 1);">About</a></p>
+    <p>Copyright &copy; 2021 All Rights Reserved by NoOne.</p>
+  </footer>
 </html>

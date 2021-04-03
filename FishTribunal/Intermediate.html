@@ -8,11 +8,13 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
       .banner {
-        background: whitesmoke;
-        height: 25vh;
-        border-top: 10px solid #f0c237;
+        background: center/cover no-repeat url("./banner11.jpg");
+         width: 80vw;
+        margin-left: 12%;
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        border-top:none;
         border-bottom: 10px solid #f0c237;
-        border-radius: 50px;
+        border-radius:none;
       }
       nav a {
         background: rgba(72, 172, 215, 1);
@@ -24,6 +26,24 @@
         width: 4rem;
         height: 4rem;
       }
+
+       @media (max-width: 600px) {
+   .banner{
+     background: whitesmoke;
+    margin: auto;
+    clip-path:none;
+    height: 25vh;
+    width: auto;
+    border: none;
+  }
+   .listicon img{
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  h3{
+        font-size: 1.2rem;
+      }
+  }
     </style>
   </head>
   <body>
@@ -36,10 +56,8 @@
           <a href="./index.html">Home</a>
         </li>
 
+        
         <li>
-          <a href="#" class="inverse">About</a>
-        </li>
-        <li class="hide">
           <a href="#"
             >Learn
             <span class="navicon">&#x25bc;</span>
@@ -49,6 +67,9 @@
             <li><a href="./Intermediate.html">Intermediate</a></li>
             <li><a href="./Expert.html">Advanced</a></li>
           </ul>
+        </li>
+        <li>
+          <a href="./about.html" class="hide">About</a>
         </li>
       </ul>
     </nav>
@@ -73,11 +94,11 @@
           2-14+ inches and display interesting behaviors and personalities
         </p>
       </div>
-      <div class="container-image1"></div>
+      <div class="container-image1 weird" style="background-image: url('./cichild6.png');"></div>
     </section>
     <br /><br />
     <section class="section">
-      <div class="container-image2"></div>
+      <div class="container-image2" style="background-image: url('./cichildfood1.png');"></div>
       <div class="container-text2">
         <h3>
           <span class="listicon"><img src="./icon2.png" alt="Square" /></span>
@@ -103,11 +124,11 @@
           cause stress and disease to fish
         </p>
       </div>
-      <div class="container-image1"></div>
+      <div class="container-image1" style="background-image: url('./cichildtank\(1\).png');" ></div>
     </section>
     <br /><br />
     <section class="section">
-      <div class="container-image2"></div>
+      <div class="container-image2" style="background-image: url('./cichildtest.png');"></div>
       <div class="container-text2">
         <h3>
           <span class="listicon"><img src="./icon2.png" alt="Square" /></span>
@@ -117,9 +138,13 @@
           Install and check filter once a day, check the water quality once a week,change 10-25% of the total volume of water every 2-4 weeks, or as needed
           <br /><br />
           Here is a more in depth
-          <a href="">Video</a> About cleaning
+          <a href="https://youtu.be/qm6iRqN35zw">Video</a> About cleaning
         </p>
       </div>
     </section>
   </body>
+   <footer class="footer">
+    <p><a href="./about.html" style="color:rgba(72, 172,215, 1);">About</a></p>
+    <p>Copyright &copy; 2021 All Rights Reserved by NoOne.</p>
+  </footer>
 </html>

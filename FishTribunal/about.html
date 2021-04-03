@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      nav ul {
+        position: absolute;
+      }
+      @media (max-width: 3000px) {
+        .container-image1 {
+          background-image: url("./Me2.png");
+          background-color: #e19557;
+          width: 400px;
+          margin-left: 20px;
+          height: 40vh;
+          border: 15px outset black;
+        }
+      }
+      @media (max-width: 600px) {
+        .container-image1 {
+          width: 145px;
+          height: 35vh;
+        }
+      }
+      @media (max-width: 300px) {
+        .container-image1 {
+          width: 120px;
+          height: 50vh;
+          border: none;
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: gray">
+    <nav class="topnav">
+      <ul>
+        <li class="logo">
+          <a href="#">Fish Tribunal<span class="navicon">&#x1f41f;</span></a>
+        </li>
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="#"
+            >Learn
+            <span class="navicon">&#x25bc;</span>
+          </a>
+          <ul class="dropdown">
+            <li><a href="./Begineer.html">Begineer</a></li>
+            <li><a href="./Intermediate.html">Intermediate</a></li>
+            <li><a href="./Expert.html">Advanced</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="./about.html" class="hide">About</a>
+        </li>
+      </ul>
+    </nav>
+    <header
+      class="banner"
+      style="background-image: url('./banner13.jpg')"
+    ></header>
+    <br />
+    <section class="section" style="margin: 3vh 3vw">
+      <div class="container-text1">
+        <h3 style="text-align: center; border-bottom: 10px double black">
+          About Me
+        </h3>
+        <p>
+          Hello, my name is Christian Olowokere! I’m an aspiring software
+          developer and this is my first project ever after two weeks of
+          learning HTML and CSS. This website is about fish care knowledge and I
+          hope you enjoy it. Thank you!!!
+        </p>
+      </div>
+      <div class="container-image1"></div>
+    </section>
+  </body>
+  <footer class="footer">
+    <p><a href="./about.html" style="color:rgba(72, 172,215, 1);">About</a></p>
+    <p>Copyright &copy; 2021 All Rights Reserved by NoOne.</p>
+  </footer>
+</html>

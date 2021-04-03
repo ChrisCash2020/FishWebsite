@@ -139,13 +139,18 @@ p, pre {
 h3 {
         font-size: 3rem;
       }
-@media (max-width: 600px) {
- h1 {
-    font-size: 1.3rem;
-  }
-  p {
-    font-size: 1rem;
+      .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
+      @media (max-width: 1200px) {
+     .container-image1,
+.container-image2{
+  height: 50vh;
+  width:250px;
+}
+      }
 @media (max-width: 600px) {
   .logo {
     padding: 0px;
@@ -155,9 +160,13 @@ h3 {
     padding-left: 17px;
   }
   nav ul {
-    position: static;
-    width: 95%;
+    position:static;
   }
+  nav a{
+  background-color: transparent;
+  padding: 5px;
+  }
+
   nav .hide {
     display: none;
   }
@@ -166,6 +175,21 @@ h3 {
     margin-top: 4px;
     font-size: 0.7rem;
   }
+  
+  h1 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .container-image1,
+.container-image2{
+  height: 35vh;
+  width:110px;
+}
 }
 
 /* .section:hover h1{ --You can use somewhere else just change the class---

@@ -25,7 +25,7 @@ nav ul {
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  height: 130vh;
   width: 100vw;
   margin: 4% 0%;
   position: relative;
@@ -74,6 +74,46 @@ height: 50vh;
 margin:auto;
  outline:8px double rgba(72,172,215,1);
 }
+.gallary-container{
+  flex-direction: row;
+  display: flex;
+}
+.gallary{
+  border: 15px double rgba(225, 149, 87, 1) ;
+  height: 25vh;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+ margin:0 auto;;
+ padding;
+}
+.gallary img{
+
+  height: 18.5vh;
+  width: 370px;
+}
+@media (max-width: 1300px) {
+  .gallary{
+    width: 300px;
+    height: 20vh;
+  }
+  .gallary img{
+
+  height: 13.5vh;
+  width: 270px;
+}
+}
+@media (max-width: 910px) {
+  .gallary{
+    width: 200px;
+    height: 10vh;
+  }
+  .gallary img{
+
+  height: 8.5vh;
+  width: 170px;
+}
+}
       @media (max-width: 600px) {
   .main {
     height: 100vh;
@@ -85,9 +125,16 @@ margin:auto;
     outline-width: 15px;
     height: 30vh;
   }
+  .gallary-container{
+    flex-direction: column;
+  }
+  .gallary{
+    border:none;
+    flex:1;
+    width: auto;
+  height: 140px;
+  }
    }
-    
-     
     </style>
   </head>
   <body>
@@ -101,11 +148,7 @@ margin:auto;
         <li>
           <a href="./index.html">Home</a>
         </li>
-
-        <li>
-          <a href="#" class="inverse">About</a>
-        </li>
-        <li class="hide">
+        <li >
           <a href="#"
             >Learn
             <span class="navicon">&#x25bc;</span>
@@ -115,6 +158,9 @@ margin:auto;
             <li><a href="./Intermediate.html">Intermediate</a></li>
             <li><a href="./Expert.html">Advanced</a></li>
           </ul>
+        </li>
+        <li>
+          <a href="./about.html" class="hide">About</a>
         </li>
       </ul>
     </nav>
@@ -152,17 +198,42 @@ margin:auto;
         proper information your fish can end up dying fairly early. <br><br>
         <br>
           
-            <h2 style="font-size: 1.3rem;color:rgba(72, 172,215, 1);text-shadow:2px 0.8px rgb(255, 255, 255) "><u>Know these</u></h2> <br>
+            <!-- <h2 style="font-size: 1.3rem;color:rgba(72, 172,215, 1);text-shadow:2px 0.8px rgb(255, 255, 255) "><u>Know these</u></h2> <br>
         <h4>
             <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Decide on a fish type <br>             
             <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> What/How much to feed you fish <br> 
             <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Environment for your fish <br>   
             <span class="listicon"><img src="./gradientbox4.png" alt="Square"></span> Cleaning routine for fish <br>   
-        </h4>
+        </h4> -->
       </p>
     </div>
+    <div class="gallary-container">
+    <div class="gallary">
+      <a href="./Begineer.html">
+      <img src="./banner7.1.jpg" alt="">
+      <div class="desc"> <h2 style="font-size: 1.3rem;color:rgba(72, 172,215, 1);text-shadow:2px 0.8px rgb(255, 255, 255) "><u>Begineer</u></h2></div> 
+    </a>
+    </div>
+    <div class="gallary">
+      <a href="./Intermediate.html">
+      <img src="./banner11.jpg" alt="">
+      <div  class="desc"> <h2 style="font-size: 1.3rem;color:rgba(72, 172,215, 1);text-shadow:2px 0.8px rgb(255, 255, 255) "><u>Intermediate</u></h2></div>
+    </a>
+    </div>
+    <div class="gallary">
+      <a href="./Expert.html">
+      <img src="./KeepVert2.jpg" alt="">
+      <div  class="desc"> <h2 style="font-size: 1.3rem;color:rgba(72, 172,215, 1);text-shadow:2px 0.8px rgb(255, 255, 255) "><u>Advanced</u></h2></div>
+    </a>
+    </div>
+  </div>
+  <footer class="footer">
+    <p><a href="./about.html" style="color:rgba(72, 172,215, 1);">About</a></p>
+    <p>Copyright &copy; 2021 All Rights Reserved by NoOne.</p>
+  </footer>
     </section>
     <!-- <div class="sideimage"></div> -->
     <!-- style="padding-top: 10px;" -->
   </body>
+   
 </html>
