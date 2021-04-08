@@ -48,6 +48,7 @@ nav ul {
   margin: 0;
   position: fixed;
   width: 100%;
+  z-index:999;
 }
 nav li {
   width: 100%;
